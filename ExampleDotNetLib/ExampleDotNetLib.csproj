@@ -47,7 +47,11 @@
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
-  <Target Name="AfterBuild">
-  </Target>
   -->
+
+  <!-- Add Tests target -->
+  <Target Name="Tests" DependsOnTargets="Build">
+    <Message Text="Compilando o código..." Importance="high" />
+  </Target>
+  
 </Project>
