@@ -18,4 +18,11 @@
   <ItemGroup>
     <ProjectReference Include="..\ExampleDotNetLib\ExampleDotNetLib.csproj" />
   </ItemGroup>
+
+  <!-- Target de compilação explícito -->
+  <Target Name="BuildTarget">
+    <MSBuild Projects="$(MSBuildProjectFile)" Targets="CoreBuild" />
+  </Target>
+
+  <Target Name="CoreBuild" />
 </Project>
