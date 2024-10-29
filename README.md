@@ -25,7 +25,8 @@ dotnet new nunit -o ExampleDotNetLib.Tests
 
 dotnet sln add ExampleDotNetLib.Tests/ExampleDotNetLib.Tests.csproj
 
-
 nuget locals all -clear
+
+mono packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ExampleDotNetLib.Tests/bin/Debug/net48/ExampleDotNetLib.Tests.dll
 ```
 
