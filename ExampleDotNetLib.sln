@@ -4,6 +4,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleDotNetLib", "ExampleDotNetLib\ExampleDotNetLib.csproj", "{2F87B47C-3D64-4D2E-9BAB-5468D295DCE9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleDotNetLib.Tests", "ExampleDotNetLib.Tests\ExampleDotNetLib.Tests.csproj", "{97FF1C64-1B05-4932-BDFF-4BB7FC633919}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
