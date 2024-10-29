@@ -1,15 +1,16 @@
-namespace ExampleDotNetLib.Tests;
+using NUnit.Framework;
+using ExampleDotNetLib;
 
-public class Tests
+namespace ExampleDotNetLib.Tests
 {
-    [SetUp]
-    public void Setup()
+    public class Class1Tests
     {
-    }
-
-    [Test]
-    public void Test1()
-    {
-        Assert.Pass();
+        [Test]
+        public void TestDoubleValue()
+        {
+            var instance = new Class1("Teste", 5);
+            var result = instance.DoubleValue();
+            Assert.AreEqual(10, result);
+        }
     }
 }
