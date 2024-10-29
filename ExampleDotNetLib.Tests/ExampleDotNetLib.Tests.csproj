@@ -1,14 +1,25 @@
-<Project>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <TargetFramework>net48</TargetFramework>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OutputType>Library</OutputType>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="NUnit" Version="3.13.3" />
   </ItemGroup>
+  
   <ItemGroup>
     <ProjectReference Include="..\ExampleDotNetLib\ExampleDotNetLib.csproj" />
   </ItemGroup>
 
+  <Target Name="Build">
+    <MSBuild Projects="$(MSBuildProjectFile)" Targets="Build" />
+  </Target>
 </Project>

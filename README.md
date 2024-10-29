@@ -7,6 +7,11 @@ Start .NET mono docker environment to build the project:
 docker run -it -v $(pwd):/home -w /home mono bash
 ```
 
+Restore packages:
+```shell
+nuget restore
+```
+
 Build project:
 ```shell
 msbuild ExampleDotNetLib.sln /t:Tests
@@ -28,5 +33,7 @@ dotnet sln add ExampleDotNetLib.Tests/ExampleDotNetLib.Tests.csproj
 nuget locals all -clear
 
 mono packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ExampleDotNetLib.Tests/bin/Debug/net48/ExampleDotNetLib.Tests.dll
+
+mono packages/NUnit.ConsoleRunner.3.11.1/tools/nunit3-console.exe ExampleDotNetLib.Tests/bin/Debug/net48/ExampleDotNetLib.Tests.dll
 ```
 
