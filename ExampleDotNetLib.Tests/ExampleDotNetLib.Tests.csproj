@@ -3,6 +3,7 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <OutputType>Library</OutputType>
     <IsPackable>false</IsPackable>
+    <OutputPath>bin\Debug\net48\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,7 +20,6 @@
     <ProjectReference Include="..\ExampleDotNetLib\ExampleDotNetLib.csproj" />
   </ItemGroup>
 
-  <!-- Target de compilação explícito -->
   <Target Name="BuildTarget">
     <MSBuild Projects="$(MSBuildProjectFile)" Targets="CoreBuild" />
   </Target>
