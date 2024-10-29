@@ -24,5 +24,8 @@ docker run -it -v $(pwd):/home -w /home mcr.microsoft.com/dotnet/sdk:6.0 bash
 dotnet new nunit -o ExampleDotNetLib.Tests
 
 dotnet sln add ExampleDotNetLib.Tests/ExampleDotNetLib.Tests.csproj
+
+
+nuget locals all -clear
 ```
 
