@@ -9,8 +9,8 @@
     <ProjectGuid>{2F87B47C-3D64-4D2E-9BAB-5468D295DCE9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>USQLCSharpProject1</RootNamespace>
-    <AssemblyName>USQLCSharpProject1</AssemblyName>
+    <RootNamespace>ExampleDotNetLib</RootNamespace>
+    <AssemblyName>ExampleDotNetLib</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

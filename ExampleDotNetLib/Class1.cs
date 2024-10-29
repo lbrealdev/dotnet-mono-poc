@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ExamplaDotNetLib
+namespace ExampleDotNetLib
 {
     public class Class1
     {
