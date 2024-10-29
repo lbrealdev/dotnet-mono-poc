@@ -51,7 +51,7 @@
 
   <!-- Add Tests target -->
   <Target Name="Tests" DependsOnTargets="Build">
-    <Message Text="Compilando o código..." Importance="high" />
+    <Message Text="Running unit tests..." Importance="high" />
   </Target>
   
 </Project>
