@@ -21,6 +21,12 @@
   </ItemGroup>
 
   <ItemGroup>
+      <Reference Include="nunit.framework">
+          <HintPath>..\packages\NUnit.3.13.3\lib\net48\NUnit.Framework.dll</HintPath>
+      </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ExampleDotNetLib\ExampleDotNetLib.csproj" />
   </ItemGroup>
 
