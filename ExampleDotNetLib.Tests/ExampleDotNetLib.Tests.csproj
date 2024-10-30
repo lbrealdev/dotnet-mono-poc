@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <!-- Define um target de Build explícito -->
-  <Target Name="Build" DependsOnTargets="ResolveReferences">
-    <MSBuild Projects="$(MSBuildProjectFile)" Targets="Compile" />
+  <Target Name="Build">
+    <Csc Sources="@(Compile)" OutputAssembly="$(OutputPath)ExampleDotNetLib.Tests.dll" />
   </Target>
 </Project>
