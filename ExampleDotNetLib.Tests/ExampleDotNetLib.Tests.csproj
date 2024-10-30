@@ -3,7 +3,7 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <OutputType>Library</OutputType>
     <IsPackable>false</IsPackable>
-    <OutputPath>bin\Debug\net48\</OutputPath>
+    <TestOutputPath>$(MSBuildProjectDirectory)\TestOutput</TestOutputPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -25,4 +25,10 @@
   </Target>
 
   <Target Name="CoreBuild" />
+
+  <Target Name="BeforeBuild">
+      <PropertyGroup>
+          <OutputPath>$(TestOutputPath)</OutputPath>
+      </PropertyGroup>
+  </Target>
 </Project>

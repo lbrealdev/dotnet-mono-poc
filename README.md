@@ -37,3 +37,9 @@ mono packages/NUnit.ConsoleRunner.*/tools/nunit3-console.exe ExampleDotNetLib.Te
 mono packages/NUnit.ConsoleRunner.3.11.1/tools/nunit3-console.exe ExampleDotNetLib.Tests/bin/Debug/net48/ExampleDotNetLib.Tests.dll
 ```
 
+```shell
+msbuild ExampleDotNetLib.Tests/ExampleDotNetLib.Tests.csproj -t:BuildTarget -p:Configuration=Debug
+
+
+msbuild /p:OutputPath=TestOutput ExampleDotNetLib.Tests/ExampleDotNetLib.Tests.csproj
+```
