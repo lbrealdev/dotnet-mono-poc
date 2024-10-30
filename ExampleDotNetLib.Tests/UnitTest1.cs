@@ -3,6 +3,7 @@ using ExampleDotNetLib;
 
 namespace ExampleDotNetLib.Tests
 {
+    [TestFixture]
     public class Class1Tests
     {
         [Test]

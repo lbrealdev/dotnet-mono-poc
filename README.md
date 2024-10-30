@@ -51,4 +51,21 @@ msbuild ExampleDotNetLib.Tests/ExampleDotNetLib.Tests.csproj -p:Configuration=De
 
 
 msbuild ExampleDotNetLib.Tests/ExampleDotNetLib.Tests.csproj -t:Build
+
+
+
+
+
+
+
+
+
+
+
+
+
+mono packages/NUnit.ConsoleRunner.3.11.1/tools/nunit3-console.exe ExampleDotNetLib.Tests/bin/Debug/net48/ExampleDotNetLib.Tests.dll
+
+
+
 ```
