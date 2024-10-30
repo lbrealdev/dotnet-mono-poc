@@ -20,8 +20,13 @@
     <ProjectReference Include="..\ExampleDotNetLib\ExampleDotNetLib.csproj" />
   </ItemGroup>
 
-  <!-- Definindo target de compilação com OutputType como Library -->
-  <Target Name="Build">
+  <!-- Target para criar diretórios necessários -->
+  <Target Name="CreateDirectories">
+    <MakeDir Directories="$(OutputPath)" />
+  </Target>
+
+  <!-- Target de Build que depende de CreateDirectories -->
+  <Target Name="Build" DependsOnTargets="CreateDirectories">
     <Csc Sources="@(Compile)" OutputAssembly="$(OutputPath)ExampleDotNetLib.Tests.dll" TargetType="Library" />
   </Target>
 </Project>
