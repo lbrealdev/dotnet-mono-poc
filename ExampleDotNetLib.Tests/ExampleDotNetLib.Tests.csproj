@@ -3,7 +3,7 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <OutputType>Library</OutputType>
     <IsPackable>false</IsPackable>
-    <TestOutputPath>$(MSBuildProjectDirectory)\TestOutput</TestOutputPath>
+    <OutputPath>bin\$(Configuration)\net48\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,16 +19,4 @@
   <ItemGroup>
     <ProjectReference Include="..\ExampleDotNetLib\ExampleDotNetLib.csproj" />
   </ItemGroup>
-
-  <Target Name="BuildTarget">
-    <MSBuild Projects="$(MSBuildProjectFile)" Targets="CoreBuild" />
-  </Target>
-
-  <Target Name="CoreBuild" />
-
-  <Target Name="BeforeBuild">
-      <PropertyGroup>
-          <OutputPath>$(TestOutputPath)</OutputPath>
-      </PropertyGroup>
-  </Target>
 </Project>
