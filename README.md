@@ -42,4 +42,8 @@ msbuild ExampleDotNetLib.Tests/ExampleDotNetLib.Tests.csproj -t:BuildTarget -p:C
 
 
 msbuild /p:OutputPath=TestOutput ExampleDotNetLib.Tests/ExampleDotNetLib.Tests.csproj
+
+
+
+msbuild ExampleDotNetLib.Tests/ExampleDotNetLib.Tests.csproj -p:Configuration=Debug /verbosity:diagnostic
 ```
