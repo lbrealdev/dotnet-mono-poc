@@ -19,4 +19,9 @@
   <ItemGroup>
     <ProjectReference Include="..\ExampleDotNetLib\ExampleDotNetLib.csproj" />
   </ItemGroup>
+
+  <!-- Define um target de Build explícito -->
+  <Target Name="Build" DependsOnTargets="ResolveReferences">
+    <MSBuild Projects="$(MSBuildProjectFile)" Targets="Compile" />
+  </Target>
 </Project>
