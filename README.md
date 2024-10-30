@@ -4,6 +4,8 @@
 
 Start .NET mono docker environment to build the project:
 ```shell
+docker pull mono:latest
+
 docker run -it -v $(pwd):/home -w /home mono bash
 ```
 
@@ -133,4 +135,13 @@ sudo apt update
 Install `mono-devel`, `msbuild` and `nuget` packages:
 ```shell
 apt install mono-devel msbuild nuget -y
+```
+
+
+
+
+### Run Unit Tests
+
+```shell
+ msbuild ExampleDotNetLib.sln /t:Build
 ```
