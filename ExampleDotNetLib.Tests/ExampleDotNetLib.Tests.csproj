@@ -22,7 +22,7 @@
 
   <ItemGroup>
       <Reference Include="nunit.framework">
-          <HintPath>..\packages\NUnit.3.13.3\lib\net45\NUnit.Framework.dll</HintPath>
+          <HintPath>..\packages\NUnit.3.13.3\lib\net45\nunit.framework.dll</HintPath>
       </Reference>
   </ItemGroup>
 
