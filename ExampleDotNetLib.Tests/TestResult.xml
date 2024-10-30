@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<test-run id="2" testcasecount="2" result="Passed" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="3" engine-version="3.10.0.0" clr-version="4.0.30319.42000" start-time="2024-10-30 22:34:12Z" end-time="2024-10-30 22:34:14Z" duration="1.109021">
-  <command-line><![CDATA[/home/testnet/development/ExampleDotNetLib/packages/NUnit.ConsoleRunner.3.10.0/tools/nunit3-console.exe bin/Debug/ExampleDotNetLib.Tests.dll]]></command-line>
-  <test-suite type="Assembly" id="0-1003" name="ExampleDotNetLib.Tests.dll" fullname="/home/testnet/development/ExampleDotNetLib/ExampleDotNetLib.Tests/bin/Debug/ExampleDotNetLib.Tests.dll" runstate="Runnable" testcasecount="2" result="Passed" start-time="2024-10-30T22:34:13.8686010Z" end-time="2024-10-30T22:34:13.9572900Z" duration="0.088413" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
-    <environment framework-version="3.13.3.0" clr-version="4.0.30319.42000" os-version="Unix 6.1.0.26" platform="Unix" cwd="/home/testnet/development/ExampleDotNetLib/ExampleDotNetLib.Tests" machine-name="testnet" user="testnet" user-domain="testnet" culture="en-US" uiculture="en-US" os-architecture="x64" />
+<test-run id="2" testcasecount="2" result="Passed" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="3" engine-version="3.10.0.0" clr-version="4.0.30319.42000" start-time="2024-10-30 23:11:22Z" end-time="2024-10-30 23:11:23Z" duration="1.073958">
+  <command-line><![CDATA[/home/testnet/Desktop/repositories/dotnet-mono-poc/packages/NUnit.ConsoleRunner.3.10.0/tools/nunit3-console.exe bin/Debug/ExampleDotNetLib.Tests.dll]]></command-line>
+  <test-suite type="Assembly" id="0-1003" name="ExampleDotNetLib.Tests.dll" fullname="/home/testnet/Desktop/repositories/dotnet-mono-poc/ExampleDotNetLib.Tests/bin/Debug/ExampleDotNetLib.Tests.dll" runstate="Runnable" testcasecount="2" result="Passed" start-time="2024-10-30T23:11:23.0004320Z" end-time="2024-10-30T23:11:23.1106550Z" duration="0.109934" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
+    <environment framework-version="3.13.3.0" clr-version="4.0.30319.42000" os-version="Unix 6.1.0.26" platform="Unix" cwd="/home/testnet/Desktop/repositories/dotnet-mono-poc/ExampleDotNetLib.Tests" machine-name="testnet" user="testnet" user-domain="testnet" culture="en-US" uiculture="en-US" os-architecture="x64" />
     <settings>
       <setting name="DisposeRunners" value="True" />
-      <setting name="WorkDirectory" value="/home/testnet/development/ExampleDotNetLib/ExampleDotNetLib.Tests" />
+      <setting name="WorkDirectory" value="/home/testnet/Desktop/repositories/dotnet-mono-poc/ExampleDotNetLib.Tests" />
       <setting name="ImageRuntimeVersion" value="4.0.30319" />
       <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.8" />
       <setting name="ImageRequiresX86" value="False" />
@@ -13,14 +13,14 @@
       <setting name="NumberOfTestWorkers" value="2" />
     </settings>
     <properties>
-      <property name="_PID" value="26900" />
+      <property name="_PID" value="30152" />
       <property name="_APPDOMAIN" value="domain-" />
     </properties>
-    <test-suite type="TestSuite" id="0-1004" name="ExampleDotNetLib" fullname="ExampleDotNetLib" runstate="Runnable" testcasecount="2" result="Passed" start-time="2024-10-30T22:34:13.8849590Z" end-time="2024-10-30T22:34:13.9572230Z" duration="0.072263" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
-      <test-suite type="TestSuite" id="0-1005" name="Tests" fullname="ExampleDotNetLib.Tests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2024-10-30T22:34:13.8853030Z" end-time="2024-10-30T22:34:13.9570790Z" duration="0.071776" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
-        <test-suite type="TestFixture" id="0-1000" name="Class1Tests" fullname="ExampleDotNetLib.Tests.Class1Tests" classname="ExampleDotNetLib.Tests.Class1Tests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2024-10-30T22:34:13.8873880Z" end-time="2024-10-30T22:34:13.9557910Z" duration="0.068402" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
-          <test-case id="0-1002" name="Constructor_ShouldInitializePropertiesCorrectly" fullname="ExampleDotNetLib.Tests.Class1Tests.Constructor_ShouldInitializePropertiesCorrectly" methodname="Constructor_ShouldInitializePropertiesCorrectly" classname="ExampleDotNetLib.Tests.Class1Tests" runstate="Runnable" seed="1422975841" result="Passed" start-time="2024-10-30T22:34:13.8915730Z" end-time="2024-10-30T22:34:13.9489440Z" duration="0.057568" asserts="2" />
-          <test-case id="0-1001" name="DoubleValue_ShouldReturnDoubleTheInput_WhenCalled" fullname="ExampleDotNetLib.Tests.Class1Tests.DoubleValue_ShouldReturnDoubleTheInput_WhenCalled" methodname="DoubleValue_ShouldReturnDoubleTheInput_WhenCalled" classname="ExampleDotNetLib.Tests.Class1Tests" runstate="Runnable" seed="1186815053" result="Passed" start-time="2024-10-30T22:34:13.9531470Z" end-time="2024-10-30T22:34:13.9533580Z" duration="0.000212" asserts="1" />
+    <test-suite type="TestSuite" id="0-1004" name="ExampleDotNetLib" fullname="ExampleDotNetLib" runstate="Runnable" testcasecount="2" result="Passed" start-time="2024-10-30T23:11:23.0192600Z" end-time="2024-10-30T23:11:23.1105870Z" duration="0.091327" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
+      <test-suite type="TestSuite" id="0-1005" name="Tests" fullname="ExampleDotNetLib.Tests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2024-10-30T23:11:23.0204070Z" end-time="2024-10-30T23:11:23.1104430Z" duration="0.090036" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
+        <test-suite type="TestFixture" id="0-1000" name="Class1Tests" fullname="ExampleDotNetLib.Tests.Class1Tests" classname="ExampleDotNetLib.Tests.Class1Tests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2024-10-30T23:11:23.0226090Z" end-time="2024-10-30T23:11:23.1092490Z" duration="0.086640" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
+          <test-case id="0-1002" name="Constructor_ShouldInitializePropertiesCorrectly" fullname="ExampleDotNetLib.Tests.Class1Tests.Constructor_ShouldInitializePropertiesCorrectly" methodname="Constructor_ShouldInitializePropertiesCorrectly" classname="ExampleDotNetLib.Tests.Class1Tests" runstate="Runnable" seed="1726315303" result="Passed" start-time="2024-10-30T23:11:23.0290990Z" end-time="2024-10-30T23:11:23.0901150Z" duration="0.061276" asserts="2" />
+          <test-case id="0-1001" name="DoubleValue_ShouldReturnDoubleTheInput_WhenCalled" fullname="ExampleDotNetLib.Tests.Class1Tests.DoubleValue_ShouldReturnDoubleTheInput_WhenCalled" methodname="DoubleValue_ShouldReturnDoubleTheInput_WhenCalled" classname="ExampleDotNetLib.Tests.Class1Tests" runstate="Runnable" seed="355220098" result="Passed" start-time="2024-10-30T23:11:23.1035100Z" end-time="2024-10-30T23:11:23.1065140Z" duration="0.003004" asserts="1" />
         </test-suite>
       </test-suite>
     </test-suite>
