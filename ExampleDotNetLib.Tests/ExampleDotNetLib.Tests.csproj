@@ -20,8 +20,8 @@
     <ProjectReference Include="..\ExampleDotNetLib\ExampleDotNetLib.csproj" />
   </ItemGroup>
 
-  <!-- Define um target de Build explícito -->
+  <!-- Definindo target de compilação com OutputType como Library -->
   <Target Name="Build">
-    <Csc Sources="@(Compile)" OutputAssembly="$(OutputPath)ExampleDotNetLib.Tests.dll" />
+    <Csc Sources="@(Compile)" OutputAssembly="$(OutputPath)ExampleDotNetLib.Tests.dll" TargetType="Library" />
   </Target>
 </Project>
