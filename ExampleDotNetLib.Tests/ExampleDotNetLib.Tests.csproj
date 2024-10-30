@@ -13,6 +13,10 @@
   </ItemGroup>
 
   <ItemGroup>
+      <Compile Include="UnitTest1.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="NUnit" Version="3.13.3" />
   </ItemGroup>
 
