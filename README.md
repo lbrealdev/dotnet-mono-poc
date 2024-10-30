@@ -16,7 +16,7 @@ nuget restore
 
 Build project:
 ```shell
-msbuild ExampleDotNetLib.sln /t:Tests
+msbuild ExampleDotNetLib.sln /t:Build
 ```
 
 
