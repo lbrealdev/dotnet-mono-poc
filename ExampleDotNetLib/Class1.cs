@@ -1,31 +1,24 @@
-﻿using NUnit.Framework;
-using ExampleDotNetLib; // Certifique-se de que o namespace da biblioteca está correto
-
-namespace ExampleDotNetLib.Tests
+﻿namespace ExampleDotNetLib
 {
-    [TestFixture]
-    public class Class1Tests
+    public class Class1
     {
-        private Class1 _instance;
+        public string Name { get; set; }
+        public int Value { get; set; }
 
-        [SetUp]
-        public void SetUp()
+        public Class1(string name, int value)
         {
-            _instance = new Class1("Teste", 5);
+            Name = name;
+            Value = value;
         }
 
-        [Test]
-        public void DoubleValue_ShouldReturnDoubleTheInput_WhenCalled()
+        public int DoubleValue()
         {
-            var result = _instance.DoubleValue();
-            Assert.AreEqual(10, result);
+            return Value * 2;
         }
 
-        [Test]
-        public void Constructor_ShouldInitializePropertiesCorrectly()
+        public bool IsValueGreaterThan(int threshold)
         {
-            Assert.AreEqual("Teste", _instance.Name);
-            Assert.AreEqual(5, _instance.Value);
+            return Value > threshold;
         }
     }
 }
