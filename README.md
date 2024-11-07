@@ -145,3 +145,20 @@ apt install mono-devel msbuild nuget -y
 ```shell
  msbuild ExampleDotNetLib.sln /t:Build
 ```
+
+### Dotnet Links
+
+- https://learn.microsoft.com/en-us/dotnet/core/install/linux-debian#use-apt-to-update-net
+- https://learn.microsoft.com/en-us/dotnet/core/install/linux-scripted-manual#scripted-install
+- https://learn.microsoft.com/en-us/dotnet/core/install/linux-scripted-manual#manual-install
+- https://learn.microsoft.com/en-us/dotnet/core/install/linux-debian#unable-to-locate--some-packages-could-not-be-installed
+- https://learn.microsoft.com/en-us/dotnet/core/install/linux-snap-sdk
+- https://dotnet.microsoft.com/en-us/download/dotnet
+- https://dotnet.microsoft.com/en-us/download/dotnet/3.1
+- https://docs.github.com/en/actions/use-cases-and-examples/building-and-testing/building-and-testing-net
+- https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-install-script?WT.mc_id=dotnet-35129-website
+- https://dotnet.microsoft.com/en-us/download/dotnet/scripts
+- https://stackoverflow.com/questions/59119904/process-terminated-couldnt-find-a-valid-icu-package-installed-on-the-system-in
+- https://learn.microsoft.com/en-us/dotnet/core/install/remove-runtime-sdk-versions?pivots=os-linux
+- https://rider-support.jetbrains.com/hc/en-us/community/posts/11788971319570-Unable-to-connect-to-MSBuild-process-to-load-project
+- https://stackoverflow.com/questions/43048629/netcore-project-loading-failed-in-jetbrains-rider-on-windows
