@@ -138,7 +138,43 @@ apt install mono-devel msbuild nuget -y
 ```
 
 
+### Fix dotnet errors:
 
+- Error:
+```shell
+Process terminated. Couldn't find a valid ICU package installed on the system. Set the configuration flag System.Globalization.Invariant to true if you want to run with no globalization support.
+   at System.Environment.FailFast(System.String)
+   at System.Globalization.GlobalizationMode.GetGlobalizationInvariantMode()
+   at System.Globalization.GlobalizationMode..cctor()
+   at System.Globalization.CultureData.CreateCultureWithInvariantData()
+   at System.Globalization.CultureData.get_Invariant()
+   at System.Globalization.CultureInfo..cctor()
+   at System.String.ToLowerInvariant()
+   at Microsoft.DotNet.PlatformAbstractions.RuntimeEnvironment.GetArch()
+   at Microsoft.DotNet.PlatformAbstractions.RuntimeEnvironment..cctor()
+   at Microsoft.DotNet.PlatformAbstractions.RuntimeEnvironment.GetRuntimeIdentifier()
+   at Microsoft.DotNet.Cli.MulticoreJitProfilePathCalculator.CalculateProfileRootPath()
+   at Microsoft.DotNet.Cli.MulticoreJitActivator.StartCliProfileOptimization()
+   at Microsoft.DotNet.Cli.MulticoreJitActivator.TryActivateMulticoreJit()
+   at Microsoft.DotNet.Cli.Program.Main(System.String[])
+Aborted
+```
+
+- Solution:
+```shell
+export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
+```
+
+- Error:
+```shell
+No usable version of libssl was found
+Aborted
+```
+
+- Solution:
+```shell
+// to do
+```
 
 ### Run Unit Tests
 
@@ -162,3 +198,16 @@ apt install mono-devel msbuild nuget -y
 - https://learn.microsoft.com/en-us/dotnet/core/install/remove-runtime-sdk-versions?pivots=os-linux
 - https://rider-support.jetbrains.com/hc/en-us/community/posts/11788971319570-Unable-to-connect-to-MSBuild-process-to-load-project
 - https://stackoverflow.com/questions/43048629/netcore-project-loading-failed-in-jetbrains-rider-on-windows
+- https://stackoverflow.com/questions/62328211/dotnet-in-rider-cannot-resolve-symbol-microsoft
+
+
+
+### Dotnet commands
+
+```shell
+dotnet --list-sdks
+```
+
+```shell
+dotnet --list-runtime
+```
