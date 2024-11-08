@@ -1,4 +1,4 @@
-# dotnet poc unit tests
+# .NET Framework - Mono NUnit PoC
 
 ## Usage
 
